@@ -8,10 +8,10 @@ function showNextImage() {
   images[current].classList.add('active');
 }
 
-setInterval(showNextImage, 3000); // muda a cada 3 segundos
+setInterval(showNextImage, 6000); // muda a cada 6 segundos
 
 // Contador de tempo juntos
-const startDate = new Date("2023-02-01T00:00:00"); // coloque aqui a data que vocês começaram
+const startDate = new Date("2024-01-01T05:30:00"); // coloque aqui a data que vocês começaram
 const timerElement = document.getElementById("timer");
 
 function updateTimer() {
@@ -25,7 +25,7 @@ function updateTimer() {
   const seconds = Math.floor(diff / 1000) % 60;
 
   timerElement.textContent =
-    `${years} anos, ${days} dias, ${hours} horas, ${minutes} minutos e ${seconds} segundos`;
+    `${years} ano, ${days} dias, ${hours} horas, ${minutes} minutos e ${seconds} segundos`;
 }
 
 setInterval(updateTimer, 1000);
