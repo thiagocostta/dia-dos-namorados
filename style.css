@@ -52,6 +52,31 @@ h1 {
   display: block;
 }
 
+.botoes {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.botoes button {
+  background-color: #ff5d8f;
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.botoes button:hover {
+  background-color: #e14d7b;
+  transform: scale(1.05);
+}
+
+
 .texto-romantico {
   font-size: 1.2em;
   margin: 10px 0 20px;
