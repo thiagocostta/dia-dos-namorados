@@ -10,6 +10,23 @@ function showNextImage() {
 
 setInterval(showNextImage, 6000); // muda a cada 6 segundos
 
+function mostrarVideo() {
+  document.querySelector('.carousel').style.display = 'none';
+  document.getElementById('video-container').style.display = 'block';
+  const video = document.getElementById('video');
+  video.muted = true;   // mantém o vídeo mudo
+  video.play();
+}
+
+function voltarCarrossel() {
+  document.getElementById('video-container').style.display = 'none';
+  document.querySelector('.carousel').style.display = 'flex';
+  const video = document.getElementById('video');
+  video.pause();
+  video.currentTime = 0;
+}
+
+
 // Contador de tempo juntos
 const startDate = new Date("2024-01-01T05:30:00"); // coloque aqui a data que vocês começaram
 const timerElement = document.getElementById("timer");
